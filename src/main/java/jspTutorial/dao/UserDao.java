@@ -10,6 +10,10 @@ public class UserDao {
 	Connection cursor = DatabaseConnection.getConnection();
 	User user;
 
+	public UserDao() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public UserDao(User user) {
 		this.user = user;
 	}
@@ -32,9 +36,15 @@ public class UserDao {
 		}
 
 	}
-	
-	public void getAllUser() {
-		
+
+	public ResultSet getAllUsers() {
+		String query = "select * from users";
+		try {
+			return cursor.createStatement().executeQuery(query);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }

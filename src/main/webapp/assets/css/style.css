@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: blueviolet;
+	background-color: lightblue;
 	/* 	height: 100vh; view port height which is screen size */
 	/* 	background-image: url("../images/bg.jpg"); */
 	/* 	background-repeat: no-repeat; */
@@ -33,6 +33,11 @@ main {
 .coverImg:hover {
 	scale: 1.2;
 	transition: all 0.5s;
+}
+
+td{
+	text-align: center;
+	padding: 7px;
 }
 
 .coverImg>img {
