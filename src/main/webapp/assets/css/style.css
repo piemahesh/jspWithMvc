@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: blueviolet;
+	/* 	height: 100vh; view port height which is screen size */
+	/* 	background-image: url("../images/bg.jpg"); */
+	/* 	background-repeat: no-repeat; */
+	/* 	background-position: center; */
+	/* 	background-size: cover; */
+	/* 	background-image: url("../images/bg.jpg"); */
+}
+
+h1 {
+	color: green;
+}
+
+main {
+	background-color: red;
+}
+
+.coverImg {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+.coverImg:hover {
+	scale: 1.2;
+	transition: all 0.5s;
+}
+
+.coverImg>img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
