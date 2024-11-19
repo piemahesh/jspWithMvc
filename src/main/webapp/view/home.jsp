@@ -42,6 +42,7 @@
 		out.print(i);
 		out.print("<br>");
 		out.print(request.getAttribute("sname"));
+		out.print("<h1> hello world</h1>");
 	}
 	%>
 	<footer>
